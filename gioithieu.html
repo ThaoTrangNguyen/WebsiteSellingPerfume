@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giới thiệu - Thế Giới Nước Hoa</title>
+    <link rel="shortcut icon" href="img/favicon1.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+        
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gioithieu.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Chanel", "Lancome", "Chloe", "D&G", "YSL"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="page-gt">
+            <h1 class="page-header">
+                Giới thiệu
+            </h1>
+            <div class="page-info">
+                <p>Lời nói đầu, Perfume Store xin gửi lời chào, kính chúc sức khỏe, thành công tới
+                    quý khách hàng đã và đang đồng hành cùng chúng tôi trong suốt thời gian qua.
+                </p>
+                <br />
+                <p>
+                    Với đội ngũ chuyên viên chuyên nghiệp, Ferfume Store thấu hiểu được nhu cầu và thị hiếu của khách hàng chúng tôi luôn chú trọng tới chất lượng sản phẩm
+                    nhằm mong muốn mang tới cho khách hàng cảm giác trải nghiệm thoải mái và tự tin trong cuộc sống.
+                    Đến với Perfume Store, bạn hoàn toàn có thể chọn cho bản thân một mùi hương phù hợp với cá tính của chính mình để bạn trở nên ấn tượng. Chúng tôi luôn
+                    lắng nghe và giải đáp mọi thắc mắc, băn khoăn của khách hàng và đưa ra những giải pháp kịp thời, phù hợp nhất. Bên cạnh đó, chúng tôi cam kết bán hàng
+                    hoàn toàn chính hãng với mức giá phù hợp, thấp nhất so với các sản phẩm cùng loại trên thị trường - vì không qua bất kỳ trung gian nào. Luôn luôn trân trọng
+                    và tri ân mỗi khách hàng, không ngừng phấn đấu để phục vụ khách hàng ngày một tốt hơn.
+                    <br >
+                    <br>
+                    Rất mong nhận được sự góp ý, quan tâm và sự hợp tác tích cực từ đối tác và khách hàng.
+                    
+                <p>
+                    <br>
+                    Perfume Store chân thành cảm ơn!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+
+</html>

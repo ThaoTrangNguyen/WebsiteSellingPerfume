@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tin tức - Thế Giới Nước Hoa</title>
+    <link rel="shortcut icon" href="img/favicon1.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tintuc.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Chanel", "Lancome", "Chloe", "D&G", "YSL"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="body-tintuc">
+            <div class="tintuc-info">
+                <a href="https://vnexpress.net/tai-tao-nuoc-hoa-cua-nu-hoang-cleopatra-4461400.html" target="_blank">
+                    <img src="img/tintuc/tintuc1.jpg">
+                    <h2>Tái tạo nước hoa của nữ hoàng Cleopatra</h2>
+                </a>
+                <br/>
+                <h5>Vnexpress &emsp;3 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://vnexpress.net/thuong-hieu-nuoc-hoa-morra-co-mat-tai-ha-noi-4443359.html" target="_blank">
+                    <img src="img/tintuc/tintuc2.jpg">
+                    <h2>Thương hiệu nước hoa Morra có mặt tại Hà Nội</h2>
+                </a>
+                <br/>
+                <h5>Vnexpress &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://tuoitre.vn/nga-chao-ban-nuoc-hoa-co-mui-cua-may-bay-chien-dau-20211118164232936.htm" target="_blank">
+                    <img src="img/tintuc/tintuc3.jpg">
+                    <h2>Nga chào bán nước hoa có mùi của... máy bay chiến đấu</h2>
+                </a>
+                <br/>
+                <h5>Tuoitre &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://vnexpress.net/nuoc-hoa-duoc-chuong-thoi-dich-4241017.html" target="_blank">
+                    <img src="img/tintuc/tintuc4.jpg">
+                    <h2>Nước hoa được chuộng thời dịch</h2>
+                </a>
+                <br/>
+                <h5>Vnexpress &emsp; 13 giờ</h5>
+            </div>
+            <div class="tintuc-info" style="border-bottom: 0;">
+                <a href="https://tuoitre.vn/nuoc-hoa-co-tu-khi-nao-20180307145904008.html" target="_blank">
+                    <img src="img/tintuc/tintuc5.jpg" height="148px" width="224px;">
+                    <h2>Nước hoa có từ khi nào?</h2>
+                </a>
+                <br/>
+                <h5>Tuoitre &emsp; 9 giờ</h5>
+            </div> 
+
+        </div>
+
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+
+</body>
+
+</html>

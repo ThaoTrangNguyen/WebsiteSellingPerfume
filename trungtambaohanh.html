@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trung tâm bảo hành - Thế Giới Nước Hoa</title>
+    <link rel="shortcut icon" href="img/favicon1.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/baohanh.css">
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Chanel", "Lancome", "Chloe", "D&G", "YSL"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+</head>
+
+<body>
+
+    <script>addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script>addHeader();</script>
+
+        <div class="page-gt">
+            <h1 class="page-header">
+                Chính sách bảo hành
+            </h1> <br>
+            <div class="page-info">
+                    <p>
+                    <h4>01 đổi 01 trong 7 ngày miễn phí</h4> 
+                    Trường hợp sản phẩm bị lỗi do nhà sản xuất, sản phẩm kém chất lượng, sản phẩm không đúng
+                     chủng loại, mẫu mã, số lượng như đã đặt hàng, Khách hàng không hài lòng chất 
+                     lượng – Khách hàng sẽ được đổi sản phẩm khác hoặc trả lại mà không mất khoản phí nào.
+                     </p> <br>
+
+                   <p>
+                    <h4>Đổi trả hàng 15 ngày có phí</h4>
+                    Trường hợp vì lý do cá nhân, không thích mùi hương nước hoa đó, muốn đổi sản phẩm khác,
+                    sử dụng quá mức qui định (hơn 5%) trong thời hạn mua hàng chưa quá 15 ngày thì Khách hàng
+                    vẫn được đổi sản phẩm với mức phí là 10% giá trị sản phẩm và các chi phí vận chuyển
+                    (nếu có)
+                   </p>  <br>
+                    
+                    <p>
+                        <h4>Bảo hành mùi hương sản phẩm 24 tháng</h4>
+                    Trường hợp Khách hàng mua hàng và sử dụng trong vòng 24 tháng kể từ ngày mua mà 
+                    sản phẩm bị biến đổi mùi hương quá mức cho phép của nhà sản xuất (mùi hương bị 
+                    biến đổi hoàn toàn & không còn như mùi hương ban đầu) thì Khách hàng sẽ được đổi
+                    sản phẩm theo giá trị % hiện tại (lưu ý : chúng tôi không bảo hành thân, vỏ chai,
+                    đầu xịt )
+                    </p>
+                
+                
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <td colspan="4" class="header-table">
+                    <marquee behavior="scroll" direction=left>Trung tâm bảo hành của Perfume Store</marquee>
+                </td>
+            </tr>
+            <tr>
+                <th class="col1">STT</th>
+                <th class="col2">Địa chỉ</th>
+                <th class="col3">Điện thoại</th>
+                <th class="col4">Thời gian làm việc</th>
+            </tr>
+
+            <script>
+                var trungtam = [
+                    ["Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh"       , "(+84)942793086" , "8h00 - 17h00"],
+                    [" Đ. Võ Trường Toản, Phường Linh Trung, TP Thủ Đức, Thành phố Hồ Chí Minh"    , "(+84)808000608 "     , "8h00 - 17h00"],
+                    [" 268 Lý Thường Kiệt, Q.10, Tp.HCM"    , "076.3841649"     , "8h00 - 17h00"],
+                    [" 227 Đ. Nguyễn Văn Cừ, Phường 4, Quận 5, Thành phố Hồ Chí Minh"    , "(+84)963841649"     , "8h00 - 17h00"],
+                  
+                ]
+
+                for (var i = 0; i < trungtam.length; i++) {
+                    var link = 'https://maps.google.com/maps?q=' + trungtam[i][0];
+                    document.write(`
+                        <tr>
+                            <td class="col1">` + (i + 1) + `</td>
+                            <td class="col2"> 
+                                <a href="`+link+`" target="_blank" title="Xem bản đồ">
+                                    ` + trungtam[i][0] +`
+                                </a>
+                            </td>
+                            <td class="col3">` + trungtam[i][1] +`</td>
+                            <td class="col4">` + trungtam[i][2] +`</td>
+                        </tr>
+                    `)
+                }
+            </script>
+        </table>
+
+    </section>
+
+    <script>addContainTaiKhoan(); </script>
+
+    <div class="footer">
+            <script>addFooter();</script>
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+
+</body>
+
+</html>
